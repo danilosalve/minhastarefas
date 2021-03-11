@@ -1,0 +1,53 @@
+
+<h4 class="text-center mt-2">
+    <i class="fa fa-user-circle fa-lg"></i>
+    Criar conta</h4>
+
+<form [formGroup]="signupForm" class="form mt-4" (submit)="signup()">
+    <div class="form-group">
+        <input #emailInput formControlName="email" class="form-control" placeholder="Digite o e-mail" autofocus>
+        <mt-vmessage
+            *ngIf="signupForm.get('email').errors?.required"
+            text="E-mail obrigatorio">
+        </mt-vmessage>
+        <mt-vmessage
+            *ngIf="signupForm.get('email').errors?.email"
+            text="E-mail invalido">
+        </mt-vmessage>
+    </div>    
+
+    <div class="form-group">
+        <input formControlName="userName" class="form-control" placeholder="Digite o usuario">
+        <mt-vmessage
+            *ngIf="signupForm.get('userName').errors?.required"
+            text="Usuario obrigatorio">
+        </mt-vmessage>
+        <mt-vmessage
+            *ngIf="signupForm.get('userName').errors?.minlength"
+            text="Tamanho minimo 2">
+        </mt-vmessage>
+        <mt-vmessage
+            *ngIf="signupForm.get('userName').errors?.maxlength"
+            text="Tamanho do Nome excedido: 20">
+        </mt-vmessage>
+        <mt-vmessage
+            *ngIf="signupForm.get('userName').errors?.lowerCase"
+            text="Informe apenas letras minusculas">
+        </mt-vmessage>        
+    </div>
+
+    <div class="form-group">
+        <input formControlName="password" type="password" class="form-control" placeholder="Digite a senha">
+        <mt-vmessage
+            *ngIf="signupForm.get('password').errors?.required"
+            text="Senha obrigatorio">
+        </mt-vmessage>        
+        <mt-vmessage
+            *ngIf="signupForm.get('password').errors?.maxlength"
+            text="Tamanho maximo 20">
+        </mt-vmessage>
+    </div>
+    
+    <button [disabled]="signupForm.invalid || signupForm.pending" class="btn btn-primary btn-block">Registre-se</button>
+    <p>Já é Usuario? <a [routerLink]="['']">Entrar</a></p>
+</form>

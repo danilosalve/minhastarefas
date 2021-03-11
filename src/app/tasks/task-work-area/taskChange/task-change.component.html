@@ -1,0 +1,12 @@
+<div *ngIf="task$ | async as task">
+    <mt-taskForm
+    [id]="task.id"
+    [title]="task.title"
+    [category]="task.category"
+    [description]="task.description"
+    [completed]="task.completed"
+    [deadline]="task.deadline"
+    [dateCompleted]="task.dateCompleted"
+    [nOperation]="4"
+    ></mt-taskForm>
+</div>

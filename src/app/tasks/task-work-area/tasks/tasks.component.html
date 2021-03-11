@@ -1,0 +1,21 @@
+<p class="text-center text-muted" *ngIf="!tasks.length">
+    Desculpe, não há tarefas
+</p>
+
+<ol class="list-unstyled">
+    <li *ngFor="let cols of rows" class="row no-gutters">
+        <div *ngFor="let task of cols" class="col-3" apDarkenOnHover>          
+            <mt-task 
+            [id]="task.id"
+            [title]="task.title"
+            [category]="task.category" 
+            [deadline]="task.deadline"
+            [description]="task.description"
+            [dateCompleted]="task.dateCompleted"
+            [completed]="task.completed"
+            [taskDone]="taskDone"
+            >
+          </mt-task>
+        </div>
+    </li>
+  </ol>

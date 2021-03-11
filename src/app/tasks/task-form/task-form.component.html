@@ -1,0 +1,121 @@
+<form [formGroup]="formTask" class="form mt-4" (ngSubmit)="submitTask()">
+  <div class="form-group ml-2">
+    <label for="title">Titulo</label>
+    <div class="col-5">
+      <input
+        formControlName="title"
+        id="title"
+        class="form-control"
+        type="text"
+        placeholder="Informe o titulo da tarefa"
+        autofocus
+      />
+    </div>
+
+    <mt-vmessage
+      *ngIf="formTask.get('title').errors?.required"
+      text="Campo Obrigatorio"
+    ></mt-vmessage>
+
+    <mt-vmessage
+      *ngIf="formTask.get('title').errors?.maxlength"
+      text="Tamanho campo excedido"
+    >
+    </mt-vmessage>
+  </div>
+
+  <div class="form-group ml-2">
+    <label for="deadline">Data Limite</label>
+    <div class="col-4">
+      <div class="input-group mb">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            ><i class="fa fa-calendar" aria-hidden="true"></i
+          ></span>
+        </div>
+        <input
+          type="date"
+          formControlName="deadline"
+          id="deadline"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <mt-vmessage
+      *ngIf="formTask.get('deadline').errors?.required"
+      text="Campo Obrigatorio"
+    >
+    </mt-vmessage>
+
+    <mt-vmessage
+      *ngIf="formTask.get('deadline').errors?.dataValida"
+      text="Data invalida - Informe a Data de Limite igual ou superior ao dia atual"
+    >
+    </mt-vmessage>
+  </div>
+
+  <div class="form-group ml-2">
+    <label for="category">Categoria</label>
+
+    <div class="input-group ml-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01"
+          ><i class="fa fa-tag" aria-hidden="true"></i
+        ></label>
+      </div>
+      <select
+        class="custom-select col-4"
+        id="category"
+        formControlName="category"
+      >
+        <option>Casa</option>
+        <option>Estudo</option>
+        <option>Trabalho</option>
+      </select>
+    </div>
+
+    <mt-vmessage
+      *ngIf="formTask.get('category').errors?.required"
+      text="Campo Obrigatorio"
+    >
+    </mt-vmessage>
+  </div>
+
+  <div class="form-group ml-2">
+    <label for="description">Descrição</label>
+    <div class="col-10">
+      <textarea
+        formControlName="description"
+        class="form-control"
+        id="description"
+        placeholder="Informe a descrição da tarefa"
+        rows="3"
+      >
+      </textarea>
+    </div>
+
+    <mt-vmessage
+      *ngIf="formTask.get('description').errors?.maxlength"
+      text="Tamanho campo excedido"
+    >
+    </mt-vmessage>
+  </div>
+
+  <div class="form-group ml-2">
+    <button
+      [disabled]="formTask.invalid || formTask.peding"
+      class="btn btn-primary ml-2 col-2"
+    >
+      Salvar
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-secondary ml-2 col-2"
+      [routerLink]="['/todotask']"
+    >
+      Cancelar
+    </button>
+  </div>
+</form>

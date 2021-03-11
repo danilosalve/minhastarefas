@@ -1,0 +1,81 @@
+<div 
+  class="card ml-3" 
+  style="max-width: 18rem;"
+  >
+
+  <div class="card-header" *ngIf="!delayedTask; else DelayTask">
+    <h5 
+      class="card-title" 
+      *ngIf="title">
+      {{title}}
+    </h5>
+  </div>
+
+  <ng-template #DelayTask>
+    <div class="card-header" style="background-color:Silver;">
+      <h5 
+        class="card-title" 
+        *ngIf="title">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        {{title}}        
+      </h5>
+    </div>
+  </ng-template>
+  
+  <div class="card-body">    
+
+    <h6 
+      class="card-subtitle mb-3 text-muted" 
+      *ngIf="deadline">
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      {{deadline | date: 'dd/MM/yyyy'}}
+    </h6>
+
+    <h6 
+      class="card-subtitle mb-2 text-muted" 
+      *ngIf="dateCompleted">
+      <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+      {{dateCompleted | date: 'dd/MM/yyyy'}}
+    </h6>
+
+    <p 
+      class="card-text text-capitalize"
+      *ngIf="category">
+      <i class="fa fa-tag" aria-hidden="true"></i>
+      {{category}}
+    </p>
+    
+    <div *ngIf="!taskDone; else TaskDone">
+      <button
+        class="btn btn-primary mr-1 mb-1"
+        type="submit"
+        data-toggle="tooltip" data-placement="top" title="Concluir Tarefa"
+        (click)="completedTask()">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        Concluir
+      </button>
+
+      <button
+        class="btn btn-primary mr-1 mb-1"
+        type="submit"
+        data-toggle="tooltip" data-placement="top" title="Alterar Tarefa"
+        [routerLink]="['task', id.toString()]">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        Alterar
+      </button>      
+    </div>
+  </div>
+
+  <ng-template #TaskDone>
+    <button 
+    class="btn btn-primary mr-1 mb-1"
+    type="submit"
+    data-toggle="tooltip" data-placement="top" title="Excluir Tarefa"
+    (click)="removeTask()">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    Excluir
+  </button>
+  </ng-template>
+</div>
+
+<hr>

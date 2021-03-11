@@ -1,0 +1,3 @@
+<mt-search (onTyping)="filter = $event" [value]="filter"></mt-search>
+<mt-tasks [tasks]="tasks | filterBytitle: filter"  [taskDone]="true"></mt-tasks>
+<mt-ldbtn (click)="loadTaskDone()" [hasMore]="hasMore"></mt-ldbtn>

@@ -1,0 +1,46 @@
+<h4 class="text-center mt-4">Bem vindo!</h4>
+<div class="form-group">    
+    <h5 class="text-center mt-2"> 
+        <i class="fa fa-user-circle fa-lg center"></i>        
+        Efetue o Login</h5>
+</div>
+
+<form [formGroup]="loginForm" class="form mt-4" (submit)='login()'>
+
+    <div class="form-group">
+        <input #emailInput formControlName="email" class="form-control" placeholder="Digite o seu e-mail" autofocus>
+        <mt-vmessage
+            *ngIf="loginForm.get('email').errors?.required"
+            text="E-mail obrigatorio">
+        </mt-vmessage>
+        <mt-vmessage
+            *ngIf="loginForm.get('email').errors?.email"
+            text="E-mail invalido">
+        </mt-vmessage>
+    </div> 
+    
+    <div class="form-group">
+        <input
+        formControlName='password'
+            type="password" 
+            class="form-control" 
+            placeholder="Digite sua senha">
+        
+        <mt-vmessage
+            *ngIf="loginForm.get('password').errors?.required"
+            text="Senha obrigatoria!">
+        </mt-vmessage>
+    </div>
+    <button 
+        [disabled]="loginForm.invalid" 
+        type="submit" 
+        class="btn btn-primary btn-block">
+        Entrar
+    </button>
+</form>
+
+<div class="alert alert-danger mt-2" role="alert" *ngIf="mostrar">
+    {{msgerro}}
+</div>
+
+<p>Ainda não tem conta? <a [routerLink]="['signup']">Registre-se agora</a></p>
