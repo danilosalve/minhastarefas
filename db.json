@@ -1,0 +1,334 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Pintar Quarto",
+      "user": "danilo",
+      "category": "casa",
+      "description": "Pintar a parede do quarto",
+      "completed": true,
+      "deadline": "2020-02-22",
+      "dateCompleted": "2020-03-27T17:24:43.802Z"
+    },
+    {
+      "title": "Angular 1",
+      "category": "Estudo",
+      "deadline": "2020-03-26",
+      "user": "danilo",
+      "description": "Concluir o treinamento de Angular 1",
+      "completed": true,
+      "dateCompleted": "2020-03-28T01:50:29.007Z",
+      "id": 2
+    },
+    {
+      "title": "Angular 2",
+      "category": "Estudo",
+      "deadline": "2020-03-26",
+      "user": "danilo",
+      "description": "Concluir o curso de Angular 2",
+      "completed": true,
+      "dateCompleted": "2020-03-28T01:52:40.576Z",
+      "id": 3
+    },
+    {
+      "title": "Angular 3",
+      "category": "Estudo",
+      "deadline": "2020-03-27",
+      "user": "danilo",
+      "description": "Concluir o curso de angular 3",
+      "completed": true,
+      "dateCompleted": "2020-03-28T01:58:06.479Z",
+      "id": 4
+    },
+    {
+      "title": "Lixar a parede",
+      "category": "Casa",
+      "deadline": "2020-03-28",
+      "user": "andreia",
+      "description": "Lixar a parede do quarto.\n1.Remover a tinta\n2. Massa corrida\n3. Mofo",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 5
+    },
+    {
+      "title": "Power BI",
+      "category": "Estudo",
+      "deadline": "2020-03-27",
+      "user": "andreia",
+      "description": "",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 6
+    },
+    {
+      "title": "Type Script",
+      "category": "Estudo",
+      "deadline": "2020-03-29",
+      "user": "danilo",
+      "description": "Concluir treinamento de TS no Alura.",
+      "completed": true,
+      "dateCompleted": "2020-03-30T00:04:11.142Z",
+      "id": 7
+    },
+    {
+      "title": "Angular 4",
+      "category": "Estudo",
+      "deadline": "2020-03-27",
+      "user": "danilo",
+      "description": "Concluir curso de angular 4",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 8
+    },
+    {
+      "title": "Curso Jasmine",
+      "category": "Estudo",
+      "deadline": "2020-03-28",
+      "user": "danilo",
+      "description": "Concluir curso de Jasmine",
+      "completed": true,
+      "dateCompleted": "2020-03-29T14:34:23.226Z",
+      "id": 9
+    },
+    {
+      "title": "Lavar a janela",
+      "category": "Casa",
+      "deadline": "2020-03-29",
+      "user": "danilo",
+      "description": "Lavar as janelas da casa",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 10
+    },
+    {
+      "title": "Planning",
+      "category": "Trabalho",
+      "deadline": "2020-03-30",
+      "user": "danilo",
+      "description": "Reunião de planejamento",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 11
+    },
+    {
+      "title": "Retrospectiva ",
+      "category": "Trabalho",
+      "deadline": "2020-04-10",
+      "user": "danilo",
+      "description": "Restropectiva sprint abril/2020 - 1",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 12
+    },
+    {
+      "title": "Review",
+      "category": "Trabalho",
+      "deadline": "2020-04-10",
+      "user": "danilo",
+      "description": "Review sprint abril/2020 - 1º quinzena",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 13
+    },
+    {
+      "title": "Reformar Quarto",
+      "category": "Casa",
+      "deadline": "2020-03-30",
+      "user": "danilo",
+      "description": "Iniciar reforma das paredes do quarto",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 14
+    },
+    {
+      "title": "Pintar Casa",
+      "category": "Casa",
+      "deadline": "2020-04-04",
+      "user": "danilo",
+      "description": "Pintar frente da casa",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 15
+    },
+    {
+      "title": "Lavar o carro",
+      "category": "Casa",
+      "deadline": "2020-03-28",
+      "user": "danilo",
+      "description": "",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 16
+    },
+    {
+      "title": "Trocar Lampada",
+      "category": "Casa",
+      "deadline": "2020-03-28",
+      "user": "danilo",
+      "description": "",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 17
+    },
+    {
+      "title": "Testar PV",
+      "category": "Trabalho",
+      "deadline": "2020-03-28",
+      "user": "danilo",
+      "description": "Teste",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 18
+    },
+    {
+      "title": "Curso Exp. Regular",
+      "category": "Estudo",
+      "deadline": "2020-04-30",
+      "user": "danilo",
+      "description": "Concluir curso de Expressões regulares.",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 19
+    },
+    {
+      "title": "Lavar Cabelo",
+      "category": "Casa",
+      "deadline": "2020-03-29",
+      "user": "andreia",
+      "description": "Lavar o Cabelo",
+      "completed": true,
+      "dateCompleted": "2020-03-29T15:02:52.012Z",
+      "id": 20
+    },
+    {
+      "title": "Comer pizza",
+      "category": "Casa",
+      "deadline": "2020-03-29",
+      "user": "andreia",
+      "description": "",
+      "completed": true,
+      "dateCompleted": "2020-03-30T01:27:52.033Z",
+      "id": 21
+    },
+    {
+      "title": "Dormir",
+      "category": "Casa",
+      "deadline": "2020-03-30",
+      "user": "andreia",
+      "description": "",
+      "completed": true,
+      "dateCompleted": "2020-03-30T01:28:25.417Z",
+      "id": 22
+    },
+    {
+      "title": "Projeto Casa",
+      "category": "Estudo",
+      "deadline": "2020-03-30",
+      "user": "danilo",
+      "description": "Teste Filtro",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 23
+    },
+    {
+      "title": "Mover mobilia do quarto",
+      "category": "Casa",
+      "deadline": "2020-04-02",
+      "user": "danilo",
+      "description": "Mover mobilia do quarto para quarto de hospedes",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 24
+    },
+    {
+      "title": "Teste - Tarefa Atrasada",
+      "category": "Trabalho",
+      "deadline": "2020-03-30",
+      "user": "teste",
+      "description": "Teste",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 25
+    },
+    {
+      "title": "Teste - Tarefa futura",
+      "category": "Estudo",
+      "deadline": "2030-12-31",
+      "user": "teste",
+      "description": "Teste tarefa ",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 26
+    },
+    {
+      "title": "Teste - Tarefa concluída",
+      "category": "Trabalho",
+      "deadline": "2020-03-30",
+      "user": "teste",
+      "description": "",
+      "completed": true,
+      "dateCompleted": "2020-03-31T00:00:49.723Z",
+      "id": 27
+    },
+    {
+      "title": "Teste1",
+      "category": "Trabalho",
+      "deadline": "2020-04-20",
+      "user": "teste1",
+      "description": "Teste de inclusao",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 28
+    },
+    {
+      "title": "Teste2",
+      "category": "Estudo",
+      "deadline": "2020-04-25",
+      "user": "teste1",
+      "description": "teste",
+      "completed": false,
+      "dateCompleted": "",
+      "id": 29
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "description": "Casa"
+    },
+    {
+      "id": 2,
+      "description": "Estudo"
+    },
+    {
+      "id": 3,
+      "description": "Trabalho"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "userName": "danilo",
+      "email": "danilo@teste.com",
+      "password": "123"
+    },
+    {
+      "userName": "andreia",
+      "email": "andreia@teste.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "userName": "teste",
+      "email": "teste@teste.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "userName": "teste1",
+      "email": "teste1@teste.com",
+      "password": "123",
+      "id": 4
+    }
+  ]
+}
